@@ -27,7 +27,7 @@ body{
 }
 
 .TOP h2 {
-    color: hsl(234, 12%, 34%);
+    color: hsl(234, 12%, 34%); 
 }
 span{
     font-weight: lighter;
@@ -117,6 +117,9 @@ span{
     }
     .TOP{
         margin: 0 auto;
+    }
+    .TOP h2 {
+        font-size: 2em;
     }
     .wrapper{
         justify-self: flex-start;
