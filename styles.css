@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+html, body, h3, p {
+    margin: 0;
+    padding: 0;
+    
+
+}
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-family: "poppins", sans-serif;
+}
+
+.TOP {
+    margin: 50px auto;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.TOP p {
+    max-width: 65ch;
+    color: hsl(229, 6%, 66%);
+}
+
+.TOP h2 {
+    color: hsl(234, 12%, 34%);
+}
+span{
+    font-weight: lighter;
+}
+
+
+
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 85%;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 10px;
+    border-top: 4px solid;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    justify-items: start;
+    box-sizing: border-box;
+    max-width: 700px;
+    min-height: 250px;
+    box-shadow: 0px 15px 20px 8px #E7EBF4;
+}
+
+.card h3{
+    color: hsl(234, 12%, 34%);
+}
+
+.card p {
+    color: hsl(229, 6%, 66%);
+}
+
+.Supervisor{
+    border-top-color: cyan;
+}
+.Builder{
+    border-top-color: hsl(0, 78%, 62%);
+}
+.Karma{
+    border-top-color: hsl(34, 97%, 64%);
+}
+.Calculator{
+    border-top-color: hsl(180, 62%, 55%);
+}
+
+.image-card {
+    place-self: end;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive styles */
+
+@media screen and (min-width: 600px) {
+    
+    .wrapper{
+        grid-template-columns: 42% 42%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items:center ;
+        min-height: 100vh;
+    }
+    html,body {
+        margin: 0;
+        padding: 0;
+    }
+    .TOP{
+        margin: 0 auto;
+    }
+    .wrapper{
+        justify-self: flex-start;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 10% 1fr 1fr 1fr 1fr 10%;
+        width: 85%; 
+        margin: 0 auto;                 
+    }
+    .card.Supervisor{
+        grid-area: 3 / 1 / 5 / 2
+    }
+    .card.Builder{
+        grid-area: 2 / 2 / 4 / 3;
+    }
+    .card.Karma{
+        grid-area: 4 / 2 / 6 / 3;
+    }
+    .card.Calculator{
+        grid-area: 3 / 3 / 5 / 4
+    }
+}
